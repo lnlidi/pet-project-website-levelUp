@@ -1,187 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/index.css">
-    <title>LevelUp</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Vitamins</title>
 </head>
+
 <body>
-    <main>
-        <section class="section promo">
-            <video class="promo__background" width="1920" height="1080" autoplay muted loop
-                src="assets/promo/promo-video.mp4" type="video/mp4" poster="assets/promo/promo-video-poster.png"
-            >
-            </video>
-            <div class="section__items">
-                <h1>«LevelUp». Продукт для повышения потенции</h1>
-                <div class="section__item">
-                    <img width="291" height="451" src="assets/prod.png" alt="product-picture-levelup">
-                    <div class="info">
-                        <ul class="list">
-                            <li>1. Первая характеристика</li>
-                            <li>2. Вторая характеристика</li>
-                            <li>3. Третья характеристика</li>
-                        </ul>
-                        <button class="scroll-to-order-section" onclick="scrollToOrderSection()">Перейти к заказу</button>
+    <header>
+        <div class="banner">
+            <div class="banner__inner">
+                <div class="start timer">
+                    <div class="timer__text">
+                        <p class="days">0 д</p>
+                    </div>
+                    <div class="timer__text">
+                        <p class="hours">0 ч</p>
+                    </div>
+                    <div class="timer__text">
+                        <p class="minutes">0 м</p>
+                    </div>
+                    <div class="timer__text">
+                        <p class="seconds">0 с</p>
                     </div>
                 </div>
+                <div class="end">
+                    <h3 class="banner__text">Скидка до -33%</h3>
+                    <button class="banner__button" type="button" onclick="hideBanner()">
+                        <svg class="svg" width="800px" height="800px" viewBox="0 -0.5 25 25" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.96967 16.4697C6.67678 16.7626 6.67678 17.2374 6.96967 17.5303C7.26256 17.8232 7.73744 17.8232 8.03033 17.5303L6.96967 16.4697ZM13.0303 12.5303C13.3232 12.2374 13.3232 11.7626 13.0303 11.4697C12.7374 11.1768 12.2626 11.1768 11.9697 11.4697L13.0303 12.5303ZM11.9697 11.4697C11.6768 11.7626 11.6768 12.2374 11.9697 12.5303C12.2626 12.8232 12.7374 12.8232 13.0303 12.5303L11.9697 11.4697ZM18.0303 7.53033C18.3232 7.23744 18.3232 6.76256 18.0303 6.46967C17.7374 6.17678 17.2626 6.17678 16.9697 6.46967L18.0303 7.53033ZM13.0303 11.4697C12.7374 11.1768 12.2626 11.1768 11.9697 11.4697C11.6768 11.7626 11.6768 12.2374 11.9697 12.5303L13.0303 11.4697ZM16.9697 17.5303C17.2626 17.8232 17.7374 17.8232 18.0303 17.5303C18.3232 17.2374 18.3232 16.7626 18.0303 16.4697L16.9697 17.5303ZM11.9697 12.5303C12.2626 12.8232 12.7374 12.8232 13.0303 12.5303C13.3232 12.2374 13.3232 11.7626 13.0303 11.4697L11.9697 12.5303ZM8.03033 6.46967C7.73744 6.17678 7.26256 6.17678 6.96967 6.46967C6.67678 6.76256 6.67678 7.23744 6.96967 7.53033L8.03033 6.46967ZM8.03033 17.5303L13.0303 12.5303L11.9697 11.4697L6.96967 16.4697L8.03033 17.5303ZM13.0303 12.5303L18.0303 7.53033L16.9697 6.46967L11.9697 11.4697L13.0303 12.5303ZM11.9697 12.5303L16.9697 17.5303L18.0303 16.4697L13.0303 11.4697L11.9697 12.5303ZM13.0303 11.4697L8.03033 6.46967L6.96967 7.53033L11.9697 12.5303L13.0303 11.4697Z"
+                                fill="#FFFFFF" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section promo">
+            <div class="promo__inner">
+                <div class="title">
+                    <h1>Vitamins</h1>
+                    <p>Энергия на каждый день</p>
+                </div>
+                <p class="description">Это уникальная мультивитаминная таблетка, разработанная для поддержания вашего
+                    здоровья и энергии на протяжении всего дня</p>
+                <img class="promo__img" width="1000" height="1000" src="assets/Pills bottle.png" alt="Pills bottle" />
             </div>
         </section>
 
         <section class="section ingredients">
-            <div class="section__items">
-                <ul class="list left">
-                    <li class="left__item">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                        <img width="167" height="167" src="assets/ingridients/avokado.png" alt="avokado">
-                    </li>
-                    <li>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                        <img width="740" height="494" src="assets/ingridients/fig.png" alt="fig">
-                    </li>
-                    <li class="left__item">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                        <img width="1000" height="748" src="assets/ingridients/pumpkin.jpg" alt="pumpkin">
-                    </li>
-                </ul>
-                <img class="product-picture-start" width="291" height="451" src="assets/prod.png" alt="product-picture-levelup">
-                <img class="product-picture-end" width="291" height="451" src="assets/prod.png" alt="product-picture-levelup">
-                <ul class="list right">
-                    <li class="right__item">
-                        <img width="167" height="167" src="assets/ingridients/avokado.png" alt="avokado">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                    </li>
-                    <li>
-                        <img width="740" height="494" src="assets/ingridients/fig.png" alt="fig">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                    </li>
-                    <li class="right__item">
-                        <img width="1000" height="748" src="assets/ingridients/pumpkin.jpg" alt="pumpkin">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                    </li>
-                </ul>
+            <h2>Состав</h2>
+            <div class="vitamins">
+                <div class="vitamin" style="background-color: rgb(255, 255, 160)">
+                    <h3>A (Ретинол)</h3>
+                    <p>Поддерживает здоровье глаз, улучшает зрение, способствует здоровью кожи и иммунной системы</p>
+                </div>
+                <div class="vitamin" style="background-color: rgb(160, 160, 255);">
+                    <h3>B (Тиамин)</h3>
+                    <p>Улучшает работу нервной системы, способствует метаболизму углеводов, поддерживает функцию
+                        сердечно-сосудистой системы</p>
+                </div>
+                <div class="vitamin" style="background-color: rgb(255, 160, 255);">
+                    <h3>B2 (Рибофлавин)</h3>
+                    <p>Антиоксидант, поддерживает здоровье кожи и глаз, участвует в метаболизме энергии</p>
+                </div>
+                <div class="vitamin" style="background-color: rgb(255, 160, 160);">
+                    <h3>B6 (Пиридоксин)</h3>
+                    <p>Способствует обмену веществ, улучшает функцию нервной системы и производство красных кровяных
+                        клеток</p>
+                </div>
+                <div class="vitamin" style="background-color: rgb(160, 255, 160);">
+                    <h3>B12 (Кобаламин)</h3>
+                    <p>Необходим для образования красных кровяных клеток, улучшает работу нервной системы, способствует
+                        синтезу ДНК</p>
+                </div>
+                <div class="vitamin" style="background-color: rgb(255, 203, 160);">
+                    <h3>C (Аскорбиновая кислота)</h3>
+                    <p>Укрепляет иммунную систему, способствует заживлению ран, улучшает состояние кожи, антиоксидант
+                    </p>
+                </div>
+                <div class="vitamin" style="background-color: rgb(160, 255, 255);">
+                    <h3>E (Токоферол)</h3>
+                    <p>Антиоксидант, защищающий клетки от повреждений, поддерживает здоровье кожи и волос, улучшает
+                        функцию иммунной системы</p>
+                </div>
+                <div class="vitamin" style="background-color: rgb(255, 255, 255);">
+                    <h3>K (Филлохинон)</h3>
+                    <p>Необходим для нормального свертывания крови, поддерживает здоровье костей, участвует в
+                        метаболизме кальция</p>
+                </div>
             </div>
-            <button class="scroll-to-order-section" onclick="scrollToOrderSection()">Перейти к заказу</button>
         </section>
 
         <section class="section reviews">
-            <div class="section__items">
-                <h2>Отзывы</h2>
-                <div class="carousel">
-                    <div class="carousel-item">
-                        <div class="photo-container">
-                            <img class="photo" width="1025" height="1280" src="assets/reviews/man-1.jpg" alt="reviewer-photo">
-                        </div>
-                        <div class="info">
-                            <h3>Иван</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo omnis est impedit consequatur adipisci temporibus, illum, fuga voluptate vel pariatur obcaecati repudiandae! Vitae voluptatem praesentium mollitia tempora blanditiis similique repudiandae.</p>
-                        </div>
+            <h2>Отзывы</h2>
+            <div class="carousel">
+                <div class="carousel__item">
+                    <div class="photo-container">
+                        <img class="photo" width="1025" height="1280" src="assets/reviews/man-1.jpg"
+                            alt="Reviewer photo">
                     </div>
-                    <div class="carousel-item">
-                        <div class="photo-container">
-                            <img class="photo" width="1280" height="854" src="assets/reviews/man-2.jpg" alt="reviewer-photo">
-                        </div>
-                        <div class="info">
-                            <h3>Артем</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo omnis est impedit consequatur adipisci temporibus, illum, fuga voluptate vel pariatur obcaecati repudiandae! Vitae voluptatem praesentium mollitia tempora blanditiis similique repudiandae.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="photo-container">
-                            <img class="photo" width="849" height="999" src="assets/reviews/man-3.jpg" alt="reviewer-photo">
-                        </div>
-                        <div class="info">
-                            <h3>Максим</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo omnis est impedit consequatur adipisci temporibus, illum, fuga voluptate vel pariatur obcaecati repudiandae! Vitae voluptatem praesentium mollitia tempora blanditiis similique repudiandae.</p>
-                        </div>
+                    <div class="info">
+                        <h3>Иван</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis reiciendis iure animi
+                            porro dignissimos enim odit nisi non accusamus magnam? Nemo, officiis quos laboriosam iure
+                            enim consectetur magni quis sit?
+                        </p>
                     </div>
                 </div>
-                <div class="swipers">
-                    <button class="swiper-button" type="button" onclick="swipeLeft()">
-                        <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10.7672 7.5431C11.0672 7.25744 11.0788 6.78271 10.7931 6.48276C10.5074 6.18281 10.0327 6.17123 9.73276 6.4569L10.7672 7.5431ZM4.48276 11.4569C4.18281 11.7426 4.17123 12.2173 4.4569 12.5172C4.74256 12.8172 5.21729 12.8288 5.51724 12.5431L4.48276 11.4569ZM5.51724 11.4569C5.21729 11.1712 4.74256 11.1828 4.4569 11.4828C4.17123 11.7827 4.18281 12.2574 4.48276 12.5431L5.51724 11.4569ZM9.73276 17.5431C10.0327 17.8288 10.5074 17.8172 10.7931 17.5172C11.0788 17.2173 11.0672 16.7426 10.7672 16.4569L9.73276 17.5431ZM5 11.25C4.58579 11.25 4.25 11.5858 4.25 12C4.25 12.4142 4.58579 12.75 5 12.75V11.25ZM19 12.75C19.4142 12.75 19.75 12.4142 19.75 12C19.75 11.5858 19.4142 11.25 19 11.25V12.75ZM9.73276 6.4569L4.48276 11.4569L5.51724 12.5431L10.7672 7.5431L9.73276 6.4569ZM4.48276 12.5431L9.73276 17.5431L10.7672 16.4569L5.51724 11.4569L4.48276 12.5431ZM5 12.75H19V11.25H5V12.75Z"
-                                fill="#000000"/>
-                        </svg>
-                    </button>
-                    <div class="swiper-dots">
-                        <span class="swiper-dot"></span>
-                        <span class="swiper-dot"></span>
-                        <span class="swiper-dot"></span>
+                <div class="carousel__item">
+                    <div class="photo-container">
+                        <img class="photo" width="1280" height="854" src="assets/reviews/man-2.jpg"
+                            alt="Reviewer photo">
                     </div>
-                    <button class="swiper-button" type="button" onclick="swipeRight()">
-                        <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M13.2328 16.4569C12.9328 16.7426 12.9212 17.2173 13.2069 17.5172C13.4926 17.8172 13.9673 17.8288 14.2672 17.5431L13.2328 16.4569ZM19.5172 12.5431C19.8172 12.2574 19.8288 11.7827 19.5431 11.4828C19.2574 11.1828 18.7827 11.1712 18.4828 11.4569L19.5172 12.5431ZM18.4828 12.5431C18.7827 12.8288 19.2574 12.8172 19.5431 12.5172C19.8288 12.2173 19.8172 11.7426 19.5172 11.4569L18.4828 12.5431ZM14.2672 6.4569C13.9673 6.17123 13.4926 6.18281 13.2069 6.48276C12.9212 6.78271 12.9328 7.25744 13.2328 7.5431L14.2672 6.4569ZM19 12.75C19.4142 12.75 19.75 12.4142 19.75 12C19.75 11.5858 19.4142 11.25 19 11.25V12.75ZM5 11.25C4.58579 11.25 4.25 11.5858 4.25 12C4.25 12.4142 4.58579 12.75 5 12.75V11.25ZM14.2672 17.5431L19.5172 12.5431L18.4828 11.4569L13.2328 16.4569L14.2672 17.5431ZM19.5172 11.4569L14.2672 6.4569L13.2328 7.5431L18.4828 12.5431L19.5172 11.4569ZM19 11.25L5 11.25V12.75L19 12.75V11.25Z"
-                                fill="#000000"/>
-                        </svg>
-                    </button>
+                    <div class="info">
+                        <h3>Артем</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ipsum ex nam nesciunt
+                            suscipit, qui excepturi adipisci sunt eveniet expedita facilis recusandae facere voluptatum
+                            neque pariatur provident voluptas, amet aliquam!
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel__item">
+                    <div class="photo-container">
+                        <img class="photo" width="849" height="999" src="assets/reviews/man-3.jpg" alt="Reviewer photo">
+                    </div>
+                    <div class="info">
+                        <h3>Максим</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae possimus laborum ipsa
+                            assumenda magnam cumque natus autem quo fugiat tempore, iusto incidunt facilis doloribus
+                            nisi? Laborum maiores ut possimus error!
+                        </p>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <section class="section promo-product">
-            <div class="section__items">
-                <div class="start">
-                    <img class="photo" width="520" height="584" src="assets/doctor.png" alt="doctor">
+            <div class="swipers">
+                <button class="swiper-button" type="button" onclick="swipeLeft()">
+                    <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.7672 7.5431C11.0672 7.25744 11.0788 6.78271 10.7931 6.48276C10.5074 6.18281 10.0327 6.17123 9.73276 6.4569L10.7672 7.5431ZM4.48276 11.4569C4.18281 11.7426 4.17123 12.2173 4.4569 12.5172C4.74256 12.8172 5.21729 12.8288 5.51724 12.5431L4.48276 11.4569ZM5.51724 11.4569C5.21729 11.1712 4.74256 11.1828 4.4569 11.4828C4.17123 11.7827 4.18281 12.2574 4.48276 12.5431L5.51724 11.4569ZM9.73276 17.5431C10.0327 17.8288 10.5074 17.8172 10.7931 17.5172C11.0788 17.2173 11.0672 16.7426 10.7672 16.4569L9.73276 17.5431ZM5 11.25C4.58579 11.25 4.25 11.5858 4.25 12C4.25 12.4142 4.58579 12.75 5 12.75V11.25ZM19 12.75C19.4142 12.75 19.75 12.4142 19.75 12C19.75 11.5858 19.4142 11.25 19 11.25V12.75ZM9.73276 6.4569L4.48276 11.4569L5.51724 12.5431L10.7672 7.5431L9.73276 6.4569ZM4.48276 12.5431L9.73276 17.5431L10.7672 16.4569L5.51724 11.4569L4.48276 12.5431ZM5 12.75H19V11.25H5V12.75Z"
+                            fill="#000000" />
+                    </svg>
+                </button>
+                <div class="swiper-dots">
+                    <span class="swiper-dot"></span>
+                    <span class="swiper-dot"></span>
+                    <span class="swiper-dot"></span>
                 </div>
-                <div class="end">
-                    <h3>Описание</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi necessitatibus similique libero harum? Nemo, optio porro. Earum repudiandae asperiores non aliquam provident eveniet natus adipisci ducimus illo nemo, eius animi.</p>
-                    <ul class="list">
-                        <li>1. Первая характеристика</li>
-                        <li>2. Вторая характеристика</li>
-                        <li>3. Третья характеристика</li>
-                    </ul>
-                    <button class="scroll-to-order-section" onclick="scrollToOrderSection()">Перейти к заказу</button>
-                </div>
+                <button class="swiper-button" type="button" onclick="swipeRight()">
+                    <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.2328 16.4569C12.9328 16.7426 12.9212 17.2173 13.2069 17.5172C13.4926 17.8172 13.9673 17.8288 14.2672 17.5431L13.2328 16.4569ZM19.5172 12.5431C19.8172 12.2574 19.8288 11.7827 19.5431 11.4828C19.2574 11.1828 18.7827 11.1712 18.4828 11.4569L19.5172 12.5431ZM18.4828 12.5431C18.7827 12.8288 19.2574 12.8172 19.5431 12.5172C19.8288 12.2173 19.8172 11.7426 19.5172 11.4569L18.4828 12.5431ZM14.2672 6.4569C13.9673 6.17123 13.4926 6.18281 13.2069 6.48276C12.9212 6.78271 12.9328 7.25744 13.2328 7.5431L14.2672 6.4569ZM19 12.75C19.4142 12.75 19.75 12.4142 19.75 12C19.75 11.5858 19.4142 11.25 19 11.25V12.75ZM5 11.25C4.58579 11.25 4.25 11.5858 4.25 12C4.25 12.4142 4.58579 12.75 5 12.75V11.25ZM14.2672 17.5431L19.5172 12.5431L18.4828 11.4569L13.2328 16.4569L14.2672 17.5431ZM19.5172 11.4569L14.2672 6.4569L13.2328 7.5431L18.4828 12.5431L19.5172 11.4569ZM19 11.25L5 11.25V12.75L19 12.75V11.25Z"
+                            fill="#000000" />
+                    </svg>
+                </button>
             </div>
         </section>
 
         <section class="section order" id="order-section">
-            <div class="section__items">
-                <h2>«LevelUp». Продукт для повышения потенции</h2>
-                <div class="timer">
-                    <h2 class="days">0 д</h2>
-                    <h2 class="hours">0 ч</h2>
-                    <h2 class="minutes">0 м</h2>
-                    <h2 class="seconds">0 с</h2>
+            <h2>Заказ</h2>
+            <div class="bottom">
+                <div class="start">
+                    <div class="price">
+                        <p class="old-price"><strike>1200р</strike></p>
+                        <p class="new-price">800р</p>
+                    </div>
+                    <img class="product-picture" width="1000" height="1000" src="assets/Pills bottle.png"
+                        alt="Pills bottle">
                 </div>
-                
-                <div class="bottom">
-                    <div class="start">
-                        <div class="price">
-                            <p class="old-price"><strike>1200р</strike></p>
-                            <p class="new-price">800р</p>
+
+                <div class="end">
+                    <form class="order-form">
+                        <div class="input-container">
+                            <input class="input" name="name" id="name" type="text" placeholder="ФИО" required>
+                            <p class="hint">Пример: Иван Иванов</p>
                         </div>
-                        <img class="product-picture" width="291" height="451" src="assets/prod.png" alt="product-picture-levelup">
-                    </div>
-    
-                    <div class="end">
-                        <form class="order-form">
-                            <div class="input-container">
-                                <input class="input" name="name" id="name" type="text" placeholder="ФИО" required>
-                                <p class="hint">Пример: Иван Иванов</p>
-                            </div>
-                            <div class="input-container">
-                                <input class="input" name="phone" id="phone" type="tel" placeholder="Телефон" required
-                                    oninput="onInputTel(event)"
-                                >
-                                <p class="hint">Пример: 8 123 456-78-90</p>
-                            </div>
-                            <button class="button-submit" type="submit">Заказать</button>
-                        </form>
-                    </div>
+                        <div class="input-container">
+                            <input class="input" name="phone" id="phone" type="tel" placeholder="Телефон" required
+                                onfocus="onFocusTel(event)" onblur="onBlurTel(event)" oninput="onInputTel(event)">
+                            <p class="hint">Пример: +7 (123) 456-78-90</p>
+                        </div>
+                        <button class="button-submit" type="submit">Заказать</button>
+                    </form>
                 </div>
             </div>
         </section>
         <button class="scroll-to-top" onclick="scrollToTop()">
             <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6.4569 9.73276C6.17123 10.0327 6.18281 10.5074 6.48276 10.7931C6.78271 11.0788 7.25744 11.0672 7.5431 10.7672L6.4569 9.73276ZM12.5431 5.51724C12.8288 5.21729 12.8172 4.74256 12.5172 4.4569C12.2173 4.17123 11.7426 4.18281 11.4569 4.48276L12.5431 5.51724ZM12.5431 4.48276C12.2574 4.18281 11.7827 4.17123 11.4828 4.4569C11.1828 4.74256 11.1712 5.21729 11.4569 5.51724L12.5431 4.48276ZM16.4569 10.7672C16.7426 11.0672 17.2173 11.0788 17.5172 10.7931C17.8172 10.5074 17.8288 10.0327 17.5431 9.73276L16.4569 10.7672ZM12.75 5C12.75 4.58579 12.4142 4.25 12 4.25C11.5858 4.25 11.25 4.58579 11.25 5H12.75ZM11.25 19C11.25 19.4142 11.5858 19.75 12 19.75C12.4142 19.75 12.75 19.4142 12.75 19H11.25ZM7.5431 10.7672L12.5431 5.51724L11.4569 4.48276L6.4569 9.73276L7.5431 10.7672ZM11.4569 5.51724L16.4569 10.7672L17.5431 9.73276L12.5431 4.48276L11.4569 5.51724ZM11.25 5V19H12.75V5H11.25Z"
-                    fill="#000000"/>
+                <path
+                    d="M6.4569 9.73276C6.17123 10.0327 6.18281 10.5074 6.48276 10.7931C6.78271 11.0788 7.25744 11.0672 7.5431 10.7672L6.4569 9.73276ZM12.5431 5.51724C12.8288 5.21729 12.8172 4.74256 12.5172 4.4569C12.2173 4.17123 11.7426 4.18281 11.4569 4.48276L12.5431 5.51724ZM12.5431 4.48276C12.2574 4.18281 11.7827 4.17123 11.4828 4.4569C11.1828 4.74256 11.1712 5.21729 11.4569 5.51724L12.5431 4.48276ZM16.4569 10.7672C16.7426 11.0672 17.2173 11.0788 17.5172 10.7931C17.8172 10.5074 17.8288 10.0327 17.5431 9.73276L16.4569 10.7672ZM12.75 5C12.75 4.58579 12.4142 4.25 12 4.25C11.5858 4.25 11.25 4.58579 11.25 5H12.75ZM11.25 19C11.25 19.4142 11.5858 19.75 12 19.75C12.4142 19.75 12.75 19.4142 12.75 19H11.25ZM7.5431 10.7672L12.5431 5.51724L11.4569 4.48276L6.4569 9.73276L7.5431 10.7672ZM11.4569 5.51724L16.4569 10.7672L17.5431 9.73276L12.5431 4.48276L11.4569 5.51724ZM11.25 5V19H12.75V5H11.25Z"
+                    fill="#000000" />
             </svg>
         </button>
     </main>
 
     <script src="scripts/index.js"></script>
 </body>
+
 </html>
